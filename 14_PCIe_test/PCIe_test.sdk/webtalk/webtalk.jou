@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Tue Mar  5 14:35:52 2019
+# Process ID: 13400
+# Current directory: F:/xilinx_project/AX7Z100/course_s1/14_PCIe_test/PCIe_test.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/xilinx_project/AX7Z100/course_s1/14_PCIe_test/PCIe_test.sdk/webtalk/webtalk.log
+# Journal file: F:/xilinx_project/AX7Z100/course_s1/14_PCIe_test/PCIe_test.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

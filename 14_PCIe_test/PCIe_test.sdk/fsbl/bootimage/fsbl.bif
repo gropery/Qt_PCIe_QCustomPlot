@@ -1,0 +1,6 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]F:\xilinx_project\AX7Z100\course_s1\14_PCIe_test\PCIe_test.sdk\fsbl\Debug\fsbl.elf
+	F:\xilinx_project\AX7Z100\course_s1\14_PCIe_test\PCIe_test.sdk\design_1_wrapper_hw_platform_0\design_1_wrapper.bit
+}

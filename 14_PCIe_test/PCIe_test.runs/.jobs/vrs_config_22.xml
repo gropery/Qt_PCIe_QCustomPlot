@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_processing_system7_0_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_util_ds_buf_0_1_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_util_ds_buf_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_mig_7series_0_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_mig_7series_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_rst_mig_7series_0_200M_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_rst_mig_7series_0_200M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_proc_sys_reset_0_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_proc_sys_reset_1_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_proc_sys_reset_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xdma_0_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_xdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_cc_1_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_pc_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_us_1_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_us_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_cc_2_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_auto_cc_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_s00_mmu_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_s00_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_s01_mmu_0_synth_1" LaunchDir="C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_s01_mmu_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

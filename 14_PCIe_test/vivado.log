@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec 29 10:27:00 2021
+# Process ID: 14024
+# Current directory: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1404 C:\Users\Administrator\Desktop\Pcie\14_PCIe_test\PCIe_test.xpr
+# Log file: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.xpr
+INFO: [Project 1-313] Project file moved from 'F:/xilinx_project/AX7Z100/course_s1/14_PCIe_test' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'C:/Users/intel_project/AX7Z035/course_s1/13_PCIe_test_pl/PCIe_test.cache/ip', nor could it be found using path 'F:/intel_project/AX7Z035/course_s1/13_PCIe_test_pl/PCIe_test.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_interconnect_0_0
+design_1_util_ds_buf_0_1
+design_1_proc_sys_reset_0_0
+design_1_mig_7series_0_0
+design_1_s00_mmu_0
+design_1_xbar_0
+design_1_rst_mig_7series_0_200M_0
+design_1_proc_sys_reset_1_0
+design_1_auto_us_1
+design_1_xdma_0_0
+design_1_s01_mmu_0
+design_1_auto_cc_0
+design_1_auto_pc_0
+design_1_auto_cc_2
+design_1_auto_us_0
+design_1_auto_cc_1
+
+INFO: [Project 1-230] Project 'PCIe_test.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 909.234 ; gain = 215.516
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {design_1_rst_mig_7series_0_200M_0 design_1_mig_7series_0_0 design_1_proc_sys_reset_1_0 design_1_proc_sys_reset_0_0 design_1_util_ds_buf_0_1 design_1_axi_interconnect_0_0 design_1_xdma_0_0}] -log ip_upgrade.log
+Adding component instance block -- xilinx.com:ip:mig_7series:4.0 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_200M
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.1 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:xdma:4.0 - xdma_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Successfully read diagram <design_1> from BD file <C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd>
+Upgrading 'C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_axi_interconnect_0_0 (AXI Interconnect 2.1) from revision 16 to revision 20
+INFO: [IP_Flow 19-1972] Upgraded design_1_mig_7series_0_0 from Memory Interface Generator (MIG 7 Series) 4.0 to Memory Interface Generator (MIG 7 Series) 4.2
+INFO: [IP_Flow 19-3422] Upgraded design_1_proc_sys_reset_0_0 (Processor System Reset 5.0) from revision 12 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded design_1_proc_sys_reset_1_0 (Processor System Reset 5.0) from revision 12 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded design_1_rst_mig_7series_0_200M_0 (Processor System Reset 5.0) from revision 12 to revision 13
+INFO: [IP_Flow 19-3422] Upgraded design_1_util_ds_buf_0_1 (Utility Buffer 2.1) from revision 7 to revision 19
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'pciebar2axibar_axil_master' from '0x00000000' to '0x0000000000000000' has been ignored for IP 'design_1_xdma_0_0'
+WARNING: [IP_Flow 19-4316] Parameter 'pf1_expansion_rom_size_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to '2'
+WARNING: [IP_Flow 19-4316] Parameter 'pf0_expansion_rom_size_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to '2'
+WARNING: [IP_Flow 19-4316] Parameter 'pf2_expansion_rom_enabled_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'pf1_expansion_rom_enabled_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'pf0_expansion_rom_scale_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'Kilobytes'
+WARNING: [IP_Flow 19-4316] Parameter 'pf2_expansion_rom_scale_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'Kilobytes'
+WARNING: [IP_Flow 19-4316] Parameter 'pf0_expansion_rom_enabled_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'pf3_expansion_rom_type_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'N/A'
+WARNING: [IP_Flow 19-4316] Parameter 'pf2_expansion_rom_type_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'N/A'
+WARNING: [IP_Flow 19-4316] Parameter 'pf1_expansion_rom_type_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'N/A'
+WARNING: [IP_Flow 19-4316] Parameter 'pf0_expansion_rom_type_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'N/A'
+WARNING: [IP_Flow 19-4316] Parameter 'pf1_expansion_rom_scale_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'Kilobytes'
+WARNING: [IP_Flow 19-4316] Parameter 'pf3_expansion_rom_scale_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'Kilobytes'
+WARNING: [IP_Flow 19-4316] Parameter 'pf3_expansion_rom_size_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to '2'
+WARNING: [IP_Flow 19-4316] Parameter 'pf3_expansion_rom_enabled_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to 'false'
+WARNING: [IP_Flow 19-4316] Parameter 'pf2_expansion_rom_size_mqdma' is no longer present on the upgraded IP 'design_1_xdma_0_0', and cannot be set to '2'
+WARNING: [IP_Flow 19-3501] Upgraded design_1_xdma_0_0 from DMA/Bridge Subsystem for PCI Express (PCIe) 4.0 to DMA/Bridge Subsystem for PCI Express (PCIe) 4.1, with warnings. Please review the message log.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_xdma_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\Administrator\Desktop\Pcie\14_PCIe_test\PCIe_test.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [BD 41-2124] The block design file <C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd> has changed from an XML format to a JSON format. All flows are expected to work as in prior versions of Vivado. Please contact your Xilinx Support representative, in case of any issues.
+Wrote  : <C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1580.086 ; gain = 573.578
+export_ip_user_files -of_objects [get_ips {design_1_rst_mig_7series_0_200M_0 design_1_mig_7series_0_0 design_1_proc_sys_reset_1_0 design_1_proc_sys_reset_0_0 design_1_util_ds_buf_0_1 design_1_axi_interconnect_0_0 design_1_xdma_0_0}] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd]
+Wrote  : <C:\Users\Administrator\Desktop\Pcie\14_PCIe_test\PCIe_test.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_200M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_2/design_1_auto_cc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_mmu .
+Exporting to file C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:01:04 ; elapsed = 00:00:59 . Memory (MB): peak = 2078.938 ; gain = 498.852
+catch { config_ip_cache -export [get_ips -all design_1_processing_system7_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_util_ds_buf_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_mig_7series_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_rst_mig_7series_0_200M_0] }
+catch { config_ip_cache -export [get_ips -all design_1_proc_sys_reset_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_proc_sys_reset_1_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xdma_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xbar_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_2] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_s00_mmu_0] }
+catch { config_ip_cache -export [get_ips -all design_1_s01_mmu_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs -jobs 8 {design_1_processing_system7_0_0_synth_1 design_1_util_ds_buf_0_1_synth_1 design_1_mig_7series_0_0_synth_1 design_1_rst_mig_7series_0_200M_0_synth_1 design_1_proc_sys_reset_0_0_synth_1 design_1_proc_sys_reset_1_0_synth_1 design_1_xdma_0_0_synth_1 design_1_xbar_0_synth_1 design_1_auto_us_0_synth_1 design_1_auto_cc_1_synth_1 design_1_auto_pc_0_synth_1 design_1_auto_us_1_synth_1 design_1_auto_cc_2_synth_1 design_1_auto_cc_0_synth_1 design_1_s00_mmu_0_synth_1 design_1_s01_mmu_0_synth_1}
+[Wed Dec 29 10:29:52 2021] Launched design_1_processing_system7_0_0_synth_1, design_1_util_ds_buf_0_1_synth_1, design_1_mig_7series_0_0_synth_1, design_1_rst_mig_7series_0_200M_0_synth_1, design_1_proc_sys_reset_0_0_synth_1, design_1_proc_sys_reset_1_0_synth_1, design_1_xdma_0_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_us_0_synth_1, design_1_auto_cc_1_synth_1, design_1_auto_pc_0_synth_1, design_1_auto_us_1_synth_1, design_1_auto_cc_2_synth_1, design_1_auto_cc_0_synth_1, design_1_s00_mmu_0_synth_1, design_1_s01_mmu_0_synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_util_ds_buf_0_1_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_util_ds_buf_0_1_synth_1/runme.log
+design_1_mig_7series_0_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_mig_7series_0_0_synth_1/runme.log
+design_1_rst_mig_7series_0_200M_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_rst_mig_7series_0_200M_0_synth_1/runme.log
+design_1_proc_sys_reset_0_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+design_1_proc_sys_reset_1_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_proc_sys_reset_1_0_synth_1/runme.log
+design_1_xdma_0_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_xdma_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_us_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_us_0_synth_1/runme.log
+design_1_auto_cc_1_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_1_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_auto_us_1_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_us_1_synth_1/runme.log
+design_1_auto_cc_2_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_2_synth_1/runme.log
+design_1_auto_cc_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_0_synth_1/runme.log
+design_1_s00_mmu_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_s00_mmu_0_synth_1/runme.log
+design_1_s01_mmu_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_s01_mmu_0_synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2100.215 ; gain = 21.277
+export_simulation -of_objects [get_files C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 2155.965 ; gain = 0.000
+INFO: [Common 17-344] 'launch_runs' was cancelled
+validate_bd_design -force
+validate_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2155.965 ; gain = 0.000
+report_ip_status -name ip_status 
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design -force
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2155.965 ; gain = 0.000
+generate_target all [get_files  C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Administrator\Desktop\Pcie\14_PCIe_test\PCIe_test.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_200M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_1/design_1_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_2/design_1_auto_cc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m00_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s01_mmu .
+Exporting to file C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2441.234 ; gain = 285.270
+catch { config_ip_cache -export [get_ips -all design_1_mig_7series_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_xdma_0_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_us_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_2] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_cc_0] }
+catch { config_ip_cache -export [get_ips -all design_1_s00_mmu_0] }
+catch { config_ip_cache -export [get_ips -all design_1_s01_mmu_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd]
+reset_run design_1_mig_7series_0_0_synth_1
+reset_run design_1_xdma_0_0_synth_1
+launch_runs -jobs 8 {design_1_mig_7series_0_0_synth_1 design_1_xdma_0_0_synth_1 design_1_auto_us_0_synth_1 design_1_auto_cc_1_synth_1 design_1_auto_pc_0_synth_1 design_1_auto_us_1_synth_1 design_1_auto_cc_2_synth_1 design_1_auto_cc_0_synth_1 design_1_s00_mmu_0_synth_1 design_1_s01_mmu_0_synth_1}
+[Wed Dec 29 10:34:57 2021] Launched design_1_mig_7series_0_0_synth_1, design_1_xdma_0_0_synth_1, design_1_auto_us_0_synth_1, design_1_auto_cc_1_synth_1, design_1_auto_pc_0_synth_1, design_1_auto_us_1_synth_1, design_1_auto_cc_2_synth_1, design_1_auto_cc_0_synth_1, design_1_s00_mmu_0_synth_1, design_1_s01_mmu_0_synth_1...
+Run output will be captured here:
+design_1_mig_7series_0_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_mig_7series_0_0_synth_1/runme.log
+design_1_xdma_0_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_xdma_0_0_synth_1/runme.log
+design_1_auto_us_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_us_0_synth_1/runme.log
+design_1_auto_cc_1_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_1_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_auto_us_1_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_us_1_synth_1/runme.log
+design_1_auto_cc_2_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_2_synth_1/runme.log
+design_1_auto_cc_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_auto_cc_0_synth_1/runme.log
+design_1_s00_mmu_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_s00_mmu_0_synth_1/runme.log
+design_1_s01_mmu_0_synth_1: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/design_1_s01_mmu_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.ip_user_files -ipstatic_source_dir C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/modelsim} {questa=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/questa} {riviera=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/riviera} {activehdl=C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Dec 29 10:52:53 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/synth_1/runme.log
+[Wed Dec 29 10:52:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/Pcie/14_PCIe_test/PCIe_test.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z100_1]
+current_hw_device [get_hw_devices xc7z100_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z100_1] 0]
+INFO: [Labtools 27-1435] Device xc7z100 (JTAG device index = 1) is not programmed (DONE status = 0).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z100 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z100 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 29 14:51:47 2021...

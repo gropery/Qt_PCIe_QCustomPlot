@@ -1,0 +1,51 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port pcie_mgt -pg 1 -lvl 5 -x 1440 -y 1030 -defaultsOSRD
+preplace port pcie_ref -pg 1 -lvl 0 -x 0 -y 1020 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1440 -y 450 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1440 -y 470 -defaultsOSRD
+preplace port ddr3 -pg 1 -lvl 5 -x 1440 -y 800 -defaultsOSRD
+preplace port sys -pg 1 -lvl 0 -x 0 -y 830 -defaultsOSRD
+preplace port pcie_rst_n -pg 1 -lvl 0 -x 0 -y 1090 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 2 -x 530 -y 500 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 960 -y 300 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 4 -x 1260 -y 840 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 530 -y 310 -defaultsOSRD
+preplace inst proc_sys_reset_1 -pg 1 -lvl 2 -x 530 -y 110 -defaultsOSRD
+preplace inst rst_mig_7series_0_200M -pg 1 -lvl 2 -x 530 -y 730 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 170 -y 1020 -defaultsOSRD
+preplace inst xdma_0 -pg 1 -lvl 2 -x 530 -y 1080 -defaultsOSRD
+preplace netloc mig_7series_0_mmcm_locked 1 1 4 330 840 790J 740 NJ 740 1400
+preplace netloc rst_mig_7series_0_200M_peripheral_aresetn 1 2 2 800 820 1110J
+preplace netloc mig_7series_0_ui_clk 1 1 4 330 630 790 730 NJ 730 1410
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 2 330 210 730
+preplace netloc processing_system7_0_FCLK_CLK1 1 1 2 320 10 740
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 3 320 610 740 850 N
+preplace netloc util_ds_buf_0_IBUF_OUT 1 1 1 320J 1010n
+preplace netloc pcie_rst_n_1 1 0 2 NJ 1090 NJ
+preplace netloc xdma_0_axi_aclk 1 2 1 770 290n
+preplace netloc xdma_0_axi_aresetn 1 2 1 780 310n
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 1 4 320 620 NJ 620 NJ 620 1420
+preplace netloc proc_sys_reset_1_interconnect_aresetn 1 2 1 800 130n
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 1 N 350
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 1110 300n
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 1 750 230n
+preplace netloc xdma_0_M_AXI 1 2 1 760 210n
+preplace netloc xdma_0_pcie_mgt 1 2 3 NJ 1030 NJ 1030 NJ
+preplace netloc diff_clock_rtl_0_1 1 0 1 NJ 1020
+preplace netloc processing_system7_0_DDR 1 2 3 NJ 450 NJ 450 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 2 3 NJ 470 NJ 470 NJ
+preplace netloc mig_7series_0_DDR3 1 4 1 NJ 800
+preplace netloc SYS_CLK_0_1 1 0 4 NJ 830 NJ 830 NJ 830 NJ
+levelinfo -pg 1 0 170 530 960 1260 1440
+pagesize -pg 1 -db -bbox -sgen -120 0 1560 1210
+"
+}
+{
+   "da_axi4_cnt":"5",
+   "da_board_cnt":"10",
+   "da_clkrst_cnt":"2",
+   "da_ps7_cnt":"1"
+}

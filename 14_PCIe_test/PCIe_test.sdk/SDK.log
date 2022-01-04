@@ -1,0 +1,30 @@
+14:00:42 INFO  : Registering command handlers for SDK TCF services
+14:00:42 INFO  : Launching XSCT server: xsct.bat -interactive F:\xilinx_project\AX7Z100\course_s1\14_PCIe_test\PCIe_test.sdk\temp_xsdb_launch_script.tcl
+14:00:45 INFO  : XSCT server has started successfully.
+14:00:45 INFO  : Successfully done setting XSCT server connection channel  
+14:00:46 INFO  : Successfully done setting SDK workspace  
+14:00:46 INFO  : Processing command line option -hwspec F:/xilinx_project/AX7Z100/course_s1/14_PCIe_test/PCIe_test.sdk/design_1_wrapper.hdf.
+14:09:52 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -arch zynq -o F:\xilinx_project\AX7Z100\course_s1\14_PCIe_test\PCIe_test.sdk\fsbl\bootimage\BOOT.bin
+14:09:52 INFO  : Creating new bif file F:\xilinx_project\AX7Z100\course_s1\14_PCIe_test\PCIe_test.sdk\fsbl\bootimage\fsbl.bif
+14:09:54 INFO  : Bootgen command execution is done.
+17:41:53 INFO  : Launching XSCT server: xsct.bat -interactive F:\xilinx_project\AX7Z100\course_s1\14_PCIe_test\PCIe_test.sdk\temp_xsdb_launch_script.tcl
+17:41:55 INFO  : XSCT server has started successfully.
+17:41:55 INFO  : Successfully done setting XSCT server connection channel  
+17:41:57 INFO  : Successfully done setting SDK workspace  
+17:42:00 INFO  : Registering command handlers for SDK TCF services
+17:42:00 INFO  : Processing command line option -hwspec F:/xilinx_project/AX7Z100/course_s1/14_PCIe_test/PCIe_test.sdk/design_1_wrapper.hdf.
+17:42:01 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:55:08 INFO  : Launching XSCT server: xsct.bat -interactive F:\xilinx_project\AX7Z100\course_s1\14_PCIe_test\PCIe_test.sdk\temp_xsdb_launch_script.tcl
+17:55:10 INFO  : XSCT server has started successfully.
+17:55:10 INFO  : Successfully done setting XSCT server connection channel  
+17:55:13 INFO  : Successfully done setting SDK workspace  
+17:55:14 INFO  : Registering command handlers for SDK TCF services
+17:55:16 INFO  : Processing command line option -hwspec F:/xilinx_project/AX7Z100/course_s1/14_PCIe_test/PCIe_test.sdk/design_1_wrapper.hdf.
+17:55:16 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+14:11:01 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Administrator\Desktop\Pcie\14_PCIe_test\PCIe_test.sdk\temp_xsdb_launch_script.tcl
+14:11:03 INFO  : XSCT server has started successfully.
+14:11:07 INFO  : Successfully done setting XSCT server connection channel  
+14:11:07 INFO  : Successfully done setting SDK workspace  
+14:11:09 INFO  : Registering command handlers for SDK TCF services
+14:44:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:45:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
